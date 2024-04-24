@@ -1,0 +1,29 @@
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Set container to take up 100% viewport height */
+}
+
+/* CSS styles for the login/signup forms */
+.login-form,
+.signup-form {
+    width: 300px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.5); /* Glass frame effect */
+    border-radius: 20px; /* Rounded corners */
+    margin: 20px; /* Add space around forms */
+    text-align: center; /* Center text horizontally */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Add shadow */
+}
+
+/* CSS styles for body */
+body {
+    margin: 0; /* Remove default body margin */
+    padding: 0; /* Remove default body padding */
+    background-image: url(https://getwallpapers.com/wallpaper/full/4/d/4/269257.jpg);
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, sans-serif; /* Specify a fallback font */
+}

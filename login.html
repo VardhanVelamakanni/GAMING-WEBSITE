@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script type="text/javascript" src="java.js"></script> 
+    <title> Login/Signup</title>
+    <!-- Add necessary CSS styles -->
+   <link rel="stylesheet" href="style.css">
+   </head>
+<body >
+   
+    <div class="container">
+        <!-- Container for the 3D animation -->
+        <div class="relative w-screen h-screen">
+            <div class="bouncy-balloon w-full h-full bg-black bg-white-grad-1 overflow-hidden"></div>
+        </div>
+
+        <!-- Login form -->
+        <div class="login-form">
+            <h2>Login</h2>
+            <form >
+                <input type="email" placeholder="Email" ><br><br>
+                <input type="password" placeholder="Password" ><br><br>
+                <button type="submit" onclick="login()">Login</button>
+                <p style="text-align: center;">New User? <span onclick="showSignup()" style="cursor: pointer;"> Sign Up</span></p>
+                <!-- Google and Facebook login buttons -->
+                <div style="justify-content: center; display: flex;">
+                    <button onclick="loginWithGoogle()"><img src="https://cdn.iconscout.com/icon/free/png-512/free-google-160-189824.png?f=webp&w=512" alt="Google" style="width: 20px; height: 20px;"></button>
+                </div>
+            </form>
+        </div>
+
+        <!-- Signup form (Initially hidden) -->
+        <div class="signup-form" style="display: none;">
+            <h2>Sign Up</h2>
+            <form>
+                <input type="email" placeholder="Email"><br><br>
+                <input type="password" placeholder="Password"><br><br>
+                <input type="password" placeholder="Confirm Password"><br><br>
+                <button type="submit" onclick="signup()">Sign Up</button>
+                <p style="text-align: center;">Already exists? <span onclick="showLogin()" style="cursor: pointer;">Log in</span></p>
+                <!-- Google and Facebook signup buttons -->
+                <div style="justify-content: center; display: flex;">
+                    <button onclick="signupWithGoogle()"><img src="https://cdn.iconscout.com/icon/free/png-512/free-google-160-189824.png?f=webp&w=512" alt="Google" style="width: 20px; height: 20px;border-radius: 15px;"></button>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+</body>
+</html>
